@@ -3,7 +3,7 @@ tools required across the different project modules
 
 ## Installation
 
-### Must do in order
+### Required
 
 #### 1. Cloning the repo
 ```sh

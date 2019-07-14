@@ -16,7 +16,11 @@ int main(int argc, char* argv[]) {
 
     Diff A(argv[1], argv[2]);
     A.generateDiff();
-    A.printDiff();
+    vector<pair<int, string>> diff = A.getDiff();
+
+    for (pair<int,string> d : diff) {
+        cout << d.first << ":" << d.second << endl;
+    }
 
     return 0;
 }

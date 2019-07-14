@@ -1,7 +1,0 @@
-/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/bin/debug/CMakeFiles/rebuild_cache.dir
-/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/bin/debug/CMakeFiles/main.dir
-/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/bin/debug/CMakeFiles/edit_cache.dir
-/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/bin/debug/diff/CMakeFiles/rebuild_cache.dir
-/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/bin/debug/diff/CMakeFiles/edit_cache.dir
-/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/bin/debug/diff/CMakeFiles/sha256.dir
-/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/bin/debug/diff/CMakeFiles/diff.dir

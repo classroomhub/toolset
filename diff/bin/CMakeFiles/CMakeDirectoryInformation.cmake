@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/bin/debug")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/bin")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

@@ -18,7 +18,7 @@ namespace Toolset {
         public:
         Diff(const std::string file1,const std::string file2);
         void generateDiff();
-        std::vector<std::pair<int, string>> getDiff();
+        std::vector<std::pair<int, std::string>> getDiff();
     };
 }
 

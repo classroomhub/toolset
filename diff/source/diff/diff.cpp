@@ -45,8 +45,7 @@ void Diff::generateDiff() {
             if (x.compare(y) == 0) {
                 vector<string*> r = LCS.get(i-1, j-1);
                 node.insert(node.begin(), r.begin(), r.end()); // copy previous contents
-                node.push_back(&(file1.at(j-1)));
-                cout << x << ":" << y << endl;
+                node.push_back(&(hash1.at(j-1)));
             }
             else {
                 if (LCS.get(i-1, j).size() > LCS.get(i, j-1).size()) {
@@ -63,10 +62,56 @@ void Diff::generateDiff() {
 }
 
 vector<pair<int, string>> Diff::getDiff() {
+    vector<pair<int, string>> diff;
+
     int r = file2.size();
     int c = file1.size();
 
     vector<string*> lcs = LCS.get(r,c);
+    int s = lcs.size();
 
-    
+    cout << "LCS:\n";
+    for (string*p : lcs) {
+        cout << *p << endl;
+    }
+
+    int file1_i = 0, file2_i = 0, lcs_i = 0;
+    while (file1_i < c && file2_i < r && lcs_i < s) {
+        string x, y, z;
+        x = hash1.at(file1_i);
+        y = hash2.at(file2_i);
+        z = *(lcs.at(lcs_i));
+
+        if (x.compare(z) == 0 && y.compare(z) != 0) {
+            //new line
+            diff.push_back(pair<int, string>(1, file2.at(file2_i)));
+            file2_i ++;
+        }
+        else if (x.compare(z) == 0 && y.compare(z) == 0) {
+            //line retained
+            diff.push_back(pair<int, string>(0, file2.at(file2_i)));
+            file2_i ++;
+            file1_i ++;
+            lcs_i ++;
+        }
+        else {
+            //line deleted
+            diff.push_back(pair<int, string>(-1, file1.at(file1_i)));
+            file1_i ++;
+        }
+    }
+
+    while (file1_i < c) {
+        //line deleted
+        diff.push_back(pair<int, string>(-1, file1.at(file1_i)));
+        file1_i ++;
+    }
+
+    while (file2_i < r) {
+        //new line
+        diff.push_back(pair<int, string>(1, file2.at(file2_i)));
+        file2_i ++;
+    }
+
+    return diff;
 }

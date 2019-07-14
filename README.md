@@ -23,5 +23,12 @@ sudo make & make install
 ```
 
 ### Installing Diff
+
 #### Dependencies
-1. [Table class](#Installing\ Table)
+1. [Table class](https://github.com/classroomhub/toolset#installing-table--dependency-for-other-toolsets)
+
+```sh
+cd  diff/bin
+cmake ../source
+sudo make & make install
+```

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff/diff.cpp
+diff.h
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff/diff.h
+sha256.h
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff/sha256.h
+iostream
+-
+vector
+-
+fstream
+-
+
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff/diff.h
+vector
+-
+fstream
+-
+table.h
+-
+
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff/sha256.h
+string
+-
+stdint.h
+-
+

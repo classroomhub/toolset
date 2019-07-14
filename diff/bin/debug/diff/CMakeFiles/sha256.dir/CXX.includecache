@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff/sha256.cpp
+sha256.h
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff/sha256.h
+endian.h
+-
+
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff/sha256.h
+string
+-
+stdint.h
+-
+

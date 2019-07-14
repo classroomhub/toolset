@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff/diff.h
+vector
+-
+fstream
+-
+table.h
+-
+
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/main.cpp
+iostream
+-
+diff.h
+/home/shyam/Programming/Projects/ClassroomHub/toolset/diff/source/diff.h
+table.h
+-
+vector
+-
+
